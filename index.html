@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA | Luxury Beauty Salon & Spa</title>
+  <!-- Google Fonts: Playfair Display (Serif) & Montserrat (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">AURA<span>.</span></a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button class="btn btn-primary open-modal-btn">Book Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Haute Couture Beauty & Wellness</p>
+      <h1 class="hero-title">Redefining Elegance & Timeless Grace</h1>
+      <p class="hero-description">Immerse yourself in an unparalleled sanctuary of bespoke beauty treatments and holistic rejuvenation.</p>
+      <div class="hero-cta-group">
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+        <button class="btn btn-primary open-modal-btn">Book Appointment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container grid grid-2">
+      <div class="about-image-wrapper">
+        <div class="about-image-bg"></div>
+        <div class="about-image-placeholder">
+          <span>Salon Interior Visual</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-tag">Our Philosophy</p>
+        <h2 class="section-title">Where Science Meets Pure Luxury</h2>
+        <p class="about-text">
+          At AURA, luxury is not merely an aesthetic—it is an intricate ritual tailored strictly to you. Established with a commitment to perfection, our sanctuary offers bespoke treatments delivered by globally recognized master stylists and estheticians.
+        </p>
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <h3>Master Stylists</h3>
+            <p>Trained in Paris, Milan, and New York.</p>
+          </div>
+          <div class="highlight-item">
+            <h3>100% Organic</h3>
+            <p>Pure, sustainable, and botanical elixirs.</p>
+          </div>
+          <div class="highlight-item">
+            <h3>Private Suites</h3>
+            <p>Secluded suites for ultimate privacy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Pricing Menu -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-tag">Curated Experiences</p>
+        <h2 class="section-title">Services & Pricing</h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-wrapper">
+        <button class="filter-btn active" data-filter="all">All Services</button>
+        <button class="filter-btn" data-filter="hair">Hair Design</button>
+        <button class="filter-btn" data-filter="face">Skincare</button>
+        <button class="filter-btn" data-filter="nails">Nail Artistry</button>
+        <button class="filter-btn" data-filter="spa">Spa & Wellness</button>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="services-grid">
+        <!-- Hair -->
+        <div class="service-card" data-category="hair">
+          <div class="service-card-header">
+            <h3>Couture Haircut & Styling</h3>
+            <span class="price">$180+</span>
+          </div>
+          <p>Personalized consultation, scalp elixir massage, bespoke cut, and Signature Blowout.</p>
+        </div>
+
+        <div class="service-card" data-category="hair">
+          <div class="service-card-header">
+            <h3>Balayage & Gloss Therapy</h3>
+            <span class="price">$350+</span>
+          </div>
+          <p>Hand-painted multi-tonal highlighting paired with a nourishing botanical gloss ritual.</p>
+        </div>
+
+        <!-- Face -->
+        <div class="service-card" data-category="face">
+          <div class="service-card-header">
+            <h3>24K Gold Cellular Facial</h3>
+            <span class="price">$290</span>
+          </div>
+          <p>Infusion of pure 24-karat gold flakes and hyaluronic serum to restore youthfulness.</p>
+        </div>
+
+        <div class="service-card" data-category="face">
+          <div class="service-card-header">
+            <h3>Diamond Microdermabrasion</h3>
+            <span class="price">$220</span>
+          </div>
+          <p>Exfoliating diamond-head peel accompanied by deep LED light skin regeneration.</p>
+        </div>
+
+        <!-- Nails -->
+        <div class="service-card" data-category="nails">
+          <div class="service-card-header">
+            <h3>Royal Diamond Manicure</h3>
+            <span class="price">$110</span>
+          </div>
+          <p>Exfoliating rose-water soak, detailed cuticle care, paraffin dip, and custom nail art.</p>
+        </div>
+
+        <!-- Spa -->
+        <div class="service-card" data-category="spa">
+          <div class="service-card-header">
+            <h3>Hot Stone Aromatherapy Massage</h3>
+            <span class="price">$260</span>
+          </div>
+          <p>90 minutes of volcanic stone heat therapy combined with custom essential oil blends.</p>
+        </div>
+
+        <div class="service-card" data-category="spa">
+          <div class="service-card-header">
+            <h3>Hammam Detox Ritual</h3>
+            <span class="price">$310</span>
+          </div>
+          <p>Full-body eucalyptus steam, black soap scrub, and moisturizing herbal wrap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="contact-section">
+    <div class="container grid grid-2">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <p class="section-tag">Reach Out</p>
+        <h2 class="section-title">Visit Our Sanctuary</h2>
+        <p class="contact-desc">We welcome you to experience understated luxury. Reservations recommended in advance.</p>
+
+        <div class="info-blocks">
+          <div class="info-item">
+            <h4>Location</h4>
+            <p>740 Fifth Avenue, Suite 1200<br>New York, NY 10019</p>
+          </div>
+
+          <div class="info-item">
+            <h4>Opening Hours</h4>
+            <p>Mon - Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p>
+          </div>
+
+          <div class="info-item">
+            <h4>Inquiries</h4>
+            <p>Direct line: +1 (212) 555-0199<br>Email: concierge@aurabeautysalon.com</p>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder">
+          <span>Interactive Map Placeholder</span>
+        </div>
+      </div>
+
+      <!-- Quick Contact Form -->
+      <div class="contact-form-wrapper">
+        <h3>Send a Message</h3>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="contactName" required placeholder=" ">
+            <label for="contactName">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="contactEmail" required placeholder=" ">
+            <label for="contactEmail">Email Address</label>
+          </div>
+          <div class="form-group">
+            <textarea id="contactMessage" rows="4" required placeholder=" "></textarea>
+            <label for="contactMessage">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">AURA<span>.</span></a>
+        <p>Elevating beauty to an art form.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Private Circle</h4>
+        <p>Subscribe for exclusive access to seasonal packages and private invitations.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 AURA Luxury Beauty Salon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-container">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="modal-header">
+        <p class="section-tag">Reservation Request</p>
+        <h2>Book Your Appointment</h2>
+      </div>
+      <form id="bookingForm" class="modal-form">
+        <div class="form-group">
+          <input type="text" id="bookName" required placeholder=" ">
+          <label for="bookName">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="bookEmail" required placeholder=" ">
+          <label for="bookEmail">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="bookPhone" required placeholder=" ">
+          <label for="bookPhone">Phone Number</label>
+        </div>
+        <div class="form-group">
+          <select id="bookService" required>
+            <option value="" disabled selected>Select Desired Experience</option>
+            <option value="hair">Hair Design & Styling</option>
+            <option value="facial">Skincare & Facials</option>
+            <option value="nails">Nail Artistry</option>
+            <option value="spa">Spa & Rejuvenation</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="date" id="bookDate" required placeholder=" ">
+          </div>
+          <div class="form-group">
+            <input type="time" id="bookTime" required placeholder=" ">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Confirm Reservation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
